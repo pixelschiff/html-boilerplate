@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html ng-app>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="favicon.ico?ver=1.0" type="favicon/ico" />
+		<link rel="stylesheet" href="lib/css/screen.css" type="text/css" />
+		<link rel="stylesheet/less" type="text/css" href="lib/css/screen.less" />
+		<!-- link href="styles.css" rel="stylesheet" media="all and (max-width: 1024px)" -->
+		
+		<script src="lib/js/jQuery.js"></script>
+		<script src="lib/js/angular.js"></script>
+		<script src="lib/js/main.js"></script>
+		<title>xkow - Boilerplate</title>
+		
+		<script>
+		  less = {
+			env: "development",
+			async: false,
+			fileAsync: false,
+			poll: 1000,
+			functions: {},
+			dumpLineNumbers: "comments",
+			relativeUrls: false,
+			rootpath: ":/a.com/"
+		  };
+		</script>
+		<script src="lib/js/less.js"></script>
+		
+	</head>
+	<body>
+		<header>
+			<h1>Header</h1>
+		</header>
+		
+		<section id="sec1" class="box">
+			<h3>Box1</h3>
+		</section>
+		
+		<section id="sec2" class="box">
+			<h3>Box2</h3>
+		</section>
+		
+		<section id="sec3" class="box">
+			<h3>Box3</h3>
+		</section>
+		
+		<section id="sec4" class="box">
+			<h3>Box4</h3>
+		</section>
+		
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		
+		<script>
+			var items = new Array('Banane','Dodge','Skill');
+			$('li').each(function(e){
+				$(this).text(items[e]);
+			});
+			
+			function addi(a,b){
+				var sum = a+b;
+				return sum;
+			};
+			console.log(addi(10,12));
+			
+		</script>
+		
+	</body>
+</html>
